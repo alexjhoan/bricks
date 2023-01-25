@@ -1,0 +1,40 @@
+:root{
+  font-size: 16px;
+}
+
+body{
+  opacity: 0;
+}
+
+p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
+  font-family: Roboto;
+  color: $text;
+}
+
+a,p,div,input,button,textarea{
+  font-family: Roboto;
+  color: $text-secondary;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  position: relative;
+  padding: 8vh 0;
+}
+
+.btn.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  border-radius: 0;
+  padding: 10px 100px;
+  color: $white;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
+  background-color: $btn-hover!important;
+  border-color: $btn-hover!important;
+  box-shadow: none!important;
+}
