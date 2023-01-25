@@ -1,0 +1,61 @@
+:root{
+  font-size: 16px;
+}
+
+body{
+  opacity: 0;
+  overflow-x: hidden;
+}
+
+p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
+  font-family: Inter;
+  color: $text;
+  font-style: normal;
+}
+
+a,p,div,input,button,textarea{
+  font-family: Inter;
+  color: $text-secondary;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  position: relative;
+  padding: 8vh 0;
+}
+
+.btn.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  border-radius: 0;
+  padding: 10px 100px;
+  color: $white;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
+  background-color: $btn-hover!important;
+  border-color: $btn-hover!important;
+  box-shadow: none!important;
+}
+.btn.btn-secondary{
+  /* Auto layout */
+  padding: 17px 22px 17px 26px;
+  gap: 4px;
+  /* Degradados/general */
+  background: linear-gradient(90deg, #966BF6 0%, #6394F6 66.7%, #5DD7F6 100%);
+  border-radius: 80px;
+  border: none;
+}
+.btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus{
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+@media (max-width: 991.98px) {
+  .btn.btn-secondary{
+    background: #FFFFFF;
+    color: #1D1643;
+  }
+}
