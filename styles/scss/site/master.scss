@@ -3,6 +3,7 @@
 }
 
 body{
+  background: #FAFAFF;
   opacity: 0;
   overflow-x: hidden;
 }
@@ -57,5 +58,7 @@ section {
   .btn.btn-secondary{
     background: #FFFFFF;
     color: #1D1643;
+    font-size: 16px;
+    font-weight: 500;
   }
 }

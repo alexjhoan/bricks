@@ -2,11 +2,11 @@
   background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
   padding-top: 98.14px;
   padding-bottom: 110px;
+  overflow-x: hidden;
   h1{
-    font-weight: 700;
     font-size: 54px;
     line-height: 65px;
-    color: #1D154F;
+    color: $primary;
     span{
       color: #fff;
     }
@@ -16,25 +16,231 @@
     border: 4px solid $primary;
     margin: 30px 0px 21px 0px;
   }
-  p{
+  p.h5{
     font-weight: 400;
-    font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
   }
   a.btn{
     margin-top: 26px;
   }
-  .lupa-a{
-    position: relative;
-    z-index: 10;
-  }
   .lupa-b {
     position: absolute;
-    right: 0;
+    right: -30px;
     top: 30px;
-    z-index: 1;
-    max-width: 452px;
+    max-width: 486px;
     width: 100%;
+  }
+}
+.market{
+  padding-top: 92px;
+  .h1{
+    line-height: 48px;
+    color: $primary;
+    margin-bottom: 21px;
+  }
+  .h5{
+    font-weight: 400;
+    line-height: 26px;
+    color: #4B4A5F;
+    margin-bottom: 20px;
+  }
+  &_img{
+    max-width: 356px;
+    width: 100%;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: "";
+      background-image: url(../../assets/images/rocket.png);
+      max-width: 356px;
+      width: 100%;
+    }
+  }
+  &_a{
+    &_center{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+}
+.marketing{
+  &_b{
+    margin-top: 60px;
+  }
+  &_grid{
+    margin-top: 56px;
+    .sgrid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 40px;
+      row-gap: 60px;
+    }
+    .item{
+      background: #FFFFFF;
+      box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      padding: 0px 42px 86px 42px;
+      p{
+        font-weight: 400;
+        line-height: 22px;
+        color: #4B4A5F;
+        text-align: center;
+      }
+      p.h4{
+        font-weight: 600;
+        line-height: 29px;
+        color: #1D1643;
+        text-align: center;
+      }
+      .line{
+        background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
+        height: 4px;
+        width: 36px;
+        margin: 17px auto;
+        left: 0;
+        right: 0;
+      }
+      &_imgcircle {
+        box-shadow: 0px 0px 16px rgb(0 0 0 / 8%);
+        transform: translateY(-30px);
+        background-color: #fff;
+        border-radius: 50px;
+        width: 70px;
+        height: 70px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 40px;
+        }
+      }
+    }
+  }
+  .elipse{
+    max-width: 300px;
+    width: 100%;
+    position: absolute;
+    left: -50px;
+    top: 50px;
+  }
+  .agenda{
+    background: linear-gradient(90deg, #966BF6 0%, #6394F6 66.7%, #5DD7F6 100%);
+    width: 100%;
+    height: 50px;
+    margin: 200px 0px 65px 0px;
+  }
+}
+.success{
+  p.h1{
+    font-weight: 700;
+    line-height: 48px;
+    color: #1D1643;
+  }
+  p.h5{
+    font-weight: 400;
+    line-height: 26px;
+    color: #4B4A5F;
+  }
+  img{
+    max-width: 305px;
+    width: 100%;;
+  }
+  &_conter{
+    display: flex;
+    flex-direction: row;
+    .item{
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+      margin-right: 80px;
+      p.display-6{
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        color: #1D154F;
+        margin-bottom: 5px;
+      }
+      p.h5{
+        font-weight: 700;
+        line-height: 24px;
+        color: #1D1643;
+        margin-bottom: 0;
+      }
+      .line{
+        background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
+        height: 4px;
+        width: 36px;
+        margin: 10px 0;
+      }
+    }
+  }
+  p.h5.ext{
+    font-weight: 400;
+    line-height: 26px;
+    color: #4B4A5F;
+    margin-top: 47px;
+  }
+}
+/*---------------------------Bussines-------------------------------*/
+.bussines{
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 57px;
+  #lightgallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    .card{
+      background: #FFFFFF;
+      box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      margin: auto;
+      height: 170px;
+      img{
+        width: 150px;
+        margin: auto 30px;
+        height: 70px;
+      }
+    }
+    a{
+      display: none;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+  .btnMore{
+    text-align: center;
+    .btn{
+      background: radial-gradient(58.98% 222.98% at 85.42% -28.89%, #5DCCEB 0%, #6389EB 42.6%, #8B6BEB 84.2%);
+      padding: 17px 22px 17px 26px;
+      gap: 4px;
+      img{
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.text{
+  p.display-4{
+    color: #1D154F;
+    line-height: 68px;
+    span{
+      background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+  p.h5{
+    font-weight: 600;
+    line-height: 26px;
+    color: #1D1643;
   }
 }
