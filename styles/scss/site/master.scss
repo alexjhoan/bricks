@@ -19,6 +19,10 @@ a,p,div,input,button,textarea{
   color: $text-secondary;
 }
 
+a{
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
 }
