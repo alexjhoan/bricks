@@ -42,30 +42,4 @@ if (screen.width < 768) {
   });
 }
 /*------------------------------Bussines----------------------------------*/
-// $("#lightgallery").lightGallery();
-// const items =  $('#lightgallery a').length;
-// const imgInit = 8
-// const ImgMore = 4
-// $('#lightgallery a:lt('+imgInit+')').show();
-// if(imgInit >= items) {
-//   $('.btnMore').hide()
-// }
-// function seeMore() {
-//   let visibleItems = $('#lightgallery a:visible').length + ImgMore
-//   $('#lightgallery a:lt('+visibleItems+')').fadeIn(800);
-//   if(visibleItems >= items) {
-//     $('.btnMore').hide();
-//   }
-// }
-let shown = screen.width < 992 ? 8 : 10
-let showItems = $('#lightgallery a:visible').length+shown;
-$('#lightgallery a:lt('+shown+')').show();
-if(showItems >= items) {
-  $('.more').fadeOut(500);
-}
-function seeMore() {
-  $('#lightgallery a:lt('+showItems+')').fadeIn(1000);
-  if(showItems >= items) {
-    $('.more').fadeOut(500);
-  }
-}
+

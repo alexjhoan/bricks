@@ -1,8 +1,10 @@
+/*---------------------------Baner-------------------------------*/
 .banner{
   background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
   padding-top: 98.14px;
   padding-bottom: 110px;
   overflow-x: hidden;
+  margin-top: -90px ;
   h1{
     font-size: 54px;
     line-height: 65px;
@@ -32,6 +34,7 @@
     width: 100%;
   }
 }
+/*---------------------------Market-------------------------------*/
 .market{
   padding-top: 92px;
   .h1{
@@ -62,6 +65,7 @@
     justify-content: center;
   }
 }
+/*---------------------------Marketing-------------------------------*/
 .marketing{
   &_b{
     margin-top: 60px;
@@ -172,6 +176,7 @@
     }
   }
 }
+/*---------------------------Succes-------------------------------*/
 .success{
   p.h1{
     font-weight: 700;
@@ -306,6 +311,7 @@
     }
   }
 }
+/*---------------------------Text-------------------------------*/
 .text{
   p.display-4{
     color: #1D154F;
