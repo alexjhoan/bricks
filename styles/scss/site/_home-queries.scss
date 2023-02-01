@@ -6,6 +6,15 @@
     }
   }
 }
+@media (max-width: 1200.98px){
+  .bussines{
+    margin: auto;
+    #lightgallery {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  }
+}
 @media (max-width: 991.98px) {
   .banner{
     padding-bottom: 440px;
@@ -36,7 +45,7 @@
   .bussines{
     margin: auto;
     #lightgallery {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
       .item{
         .card{
