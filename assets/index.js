@@ -16,7 +16,7 @@ $('header').load('components/header.html')
 $('footer').load('components/footer.html')
 
 /*-------------------------------Market Grid----------------------------------*/
-if (screen.width < 768) {
+if (screen.width < 992) {
   $(".marketing_grid").addClass("swiper");
   $(".sgrid").addClass("swiper-wrapper");
   $(".marketing_grid .sgrid .item").addClass("swiper-slide");
@@ -35,6 +35,11 @@ if (screen.width < 768) {
       },
       475: {
         slidesPerView: 2,
+        spaceBetween: 5,
+        centeredSlides: true,
+      },
+      768: {
+        slidesPerView: 3,
         spaceBetween: 5,
         centeredSlides: true,
       },
@@ -99,4 +104,19 @@ function submited() {
     },300)
   }
   form.classList.add('was-validated')
+}
+
+let maxHeight = function (elems) {
+  return Math.max.apply(
+      null,
+      elems
+          .map(function () {
+              return $(this).height();
+          })
+          .get()
+  );
+};
+if (screen.width > 992) {
+let maxHeightTitle = maxHeight($("#marketing .item .item_content"));
+$("#marketing .item .item_content").css("height", +maxHeightTitle + "px");
 }
