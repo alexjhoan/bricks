@@ -130,28 +130,6 @@
     left: -50px;
     top: 50px;
   }
-  &_band{
-    background: linear-gradient(90deg, #966BF6 0%, #6394F6 66.7%, #5DD7F6 100%);
-    margin: 200px 0 0px;
-    display: flex;
-    flex-direction: row;
-    column-gap: 52px;
-    p{
-      padding: 17px 0;
-      color: white;
-      margin-bottom: 0;
-      margin-right: 4px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: clip;
-      img{
-        margin-left: 5px;
-      }
-    }
-  }
   .accordion-item{
     align-items: flex-start;
     border: none;
@@ -177,6 +155,41 @@
     }
   }
 }
+/*-----------------------------Band-------------------------------*/
+.container-band{
+  background: linear-gradient(90deg, #966BF6 0%, #6394F6 66.7%, #5DD7F6 100%);
+  margin: 100px 0 0px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 52px;
+  padding: 17px 0;
+  white-space: nowrap;
+
+  .list{
+    display: flex;
+    align-items: top;
+    -webkit-animation: loop 2s infinite linear;
+    animation: loop 2s infinite linear;
+    column-gap: 10px;
+  }
+  span{
+    color: white;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img{
+      margin-left: 5px;
+    }
+  }
+}
+@keyframes loop {
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
 /*---------------------------Succes-------------------------------*/
 .success{
   p.h1{
