@@ -1,0 +1,201 @@
+@media (min-width: 1440px) {
+  .banner{
+    padding: 200px 0;
+    .lupa-b {
+      top: 135px;
+    }
+  }
+}
+@media (max-width: 1200.98px){
+  .bussines{
+    margin: auto;
+    #customers {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .banner{
+    padding-bottom: 440px;
+    .lupa-b {
+      top: auto;
+      bottom: 30px;
+      max-width: 355px;
+      width: 100%;
+      right: -30px;
+    }
+    h1{
+      font-size: 32px;
+      line-height: 39px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .line{
+      margin: 16px 0px 19px 0px;
+    }
+  }
+  .marketing{
+    .cont-marketing{
+      max-width: 100%;
+    }
+    &_grid {
+      margin-top: 30px;
+      padding-bottom: 50px;
+      .sgrid{
+        padding: 0;
+        padding-top: 32px;
+        display: flex;
+        column-gap: 10px;
+        .item {
+          padding: 0px 17px 51px 17px;
+          &_imgcircle{
+            margin: 0;
+          }
+          p, p.h4{
+            text-align: left;
+          }
+          .line{
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      top: 60%;
+      height: 20px;
+    }
+  }
+  .success{
+    img{
+      margin-top: 32px;
+    }
+  }
+  .bussines{
+    margin: auto;
+    #customers {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      .item{
+        .card{
+          .card-img-top{
+            margin: 21px 20px 12px;
+            height: 43px;
+          }
+          .card-body{
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p, a{
+              color: #4B4A5F;
+            }
+            a.card-link{
+              font-weight: 500;
+              font-size: 16px;
+            }
+            .footer{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 20px;
+              img{
+                max-width: 20px;
+                height: auto;
+              }
+            }
+          }
+        }
+        &:hover{
+          .card-b{
+            display: none;
+          }
+        }
+      }
+
+
+    }
+  }
+  .text{
+    padding-top: 0;
+    p.display-4{
+      font-size: 24px;
+      line-height: 29px;
+      text-align: start;
+    }
+    p.h5{
+      font-size: 14px;
+      line-height: 19px;
+      text-align: start;
+    }
+    &_bricks{
+      max-width: 110px;
+      left: 0;
+      bottom: 9%;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .banner{
+    padding-bottom: 340px;
+    .lupa-b {
+      bottom: 40px;
+    }
+  }
+  .success{
+    p{
+      text-align: center;
+    }
+    img{
+      max-width: 230px;
+      width: 100%;
+    }
+    &_conter{
+      flex-direction: column;
+      .item{
+        margin-right: 0;
+        margin-top: 24px;
+        p.display-6{
+          font-size: 32px;
+          line-height: 26px;
+        }
+      }
+    }
+    p.h5.ext{
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 39px;
+    }
+  }
+  .bussines{
+    #customers {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin: auto;
+      width: 60%;
+    }
+  }
+}
+@media (max-width: 560.98px) {
+  .bussines{
+    #customers {
+      width: 70%;
+    }
+  }
+}
+@media (max-width: 425.98px) {
+  .banner{
+    padding-bottom: 270px;
+    .lupa-b {
+      max-width: 250px;
+    }
+  }
+  .bussines{
+    #customers {
+      width: 90%;
+    }
+  }
+}

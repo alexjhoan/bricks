@@ -1,11 +1,91 @@
+.footer-f{
+  background-color: $primary;
+  padding: 56px 0 75px 0;
+  .container{
+    position: relative;
+  }
+  p, a{
+    color: #FFFFFF;
+  }
+  p.h1{
+    line-height: 48px;
+  }
+  .line{
+    background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
+    height: 4px;
+    width: 36px;
+    margin: 13px 0 40px;
+  }
+  &_contacto{
+    display: flex;
+    flex-direction: row;
+    column-gap: 33px;
+    a {
+      img {
+        max-width: 37px;
+        width: 100%;
+        margin-right: 15px;
+      }
+    }
+  }
+  &_socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    &_redes{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      column-gap: 16px;
+    }
+  }
+  &_text{
+    margin-top: 69px;
+    p{
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+  &_logos{
+    display: flex;
+    flex-direction: row;
+    column-gap: 39px;
+    align-items: center;
+  }
+}
 
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1399.98px) {}
 
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+  .footer-f_contacto a img {
+    margin-right: 5px;
+  }
+}
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+  .footer-f{
+    &_contacto{
+      flex-direction: column;
+      row-gap: 16px;
+    }
+    &_socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 31px;
+    }
+    &_logos{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 21px;
+      row-gap: 12px;
+    }
+  }
+}
 
 @media (max-width: 767.98px) {}
 

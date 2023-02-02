@@ -1,0 +1,66 @@
+:root{
+  font-size: 16px;
+}
+
+body{
+  background: #FAFAFF;
+  opacity: 0;
+  overflow-x: hidden;
+}
+
+p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
+  font-family: Inter;
+  color: $text;
+  font-style: normal;
+}
+
+a,p,div,input,button,textarea{
+  font-family: Inter;
+  color: $text-secondary;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  position: relative;
+  padding: 8vh 0;
+}
+
+.btn.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  border-radius: 0;
+  padding: 10px 100px;
+  color: $white;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
+  background-color: $btn-hover!important;
+  border-color: $btn-hover!important;
+  box-shadow: none!important;
+}
+.btn.btn-secondary{
+  padding: 17px 22px 17px 26px;
+  gap: 4px;
+  background: radial-gradient(58.98% 222.98% at 85.42% -28.89%, #5dcceb00, #6389EB 42.6%, #8B6BEB 84.2%);
+  border-radius: 80px;
+  border: none;
+}
+.btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus{
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+@media (max-width: 991.98px) {
+  .btn.btn-secondary{
+    background: #FFFFFF;
+    color: #1D1643;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

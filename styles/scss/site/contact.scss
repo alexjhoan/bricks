@@ -1,0 +1,124 @@
+.contact{
+  padding-bottom: 104px;
+  padding-top: 169px;
+  background: #FAFAFF;
+  p.h1{
+    line-height: 48px;
+    color: #1D1643;
+    margin-bottom: 24px;
+  }
+  p.h5{
+    font-weight: 400;
+    line-height: 26px;
+    color: #4B4A5F;
+    margin-bottom: 35px;
+  }
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: radial-gradient(58.98% 222.98% at 85.42% -28.89%, #5dcceb00, #6389EB 42.6%, #8B6BEB 84.2%);
+    left: 0;
+    right: 0;
+    border-radius: 16px;
+    margin: auto;
+  }
+  &_form {
+    width: 100%;
+  }
+  &_form_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px 24px;
+    gap: 16px;
+    .form-floating {
+      width: 100%;
+      .form-control{
+        border-radius: 16px;
+      }
+    }
+    .form-floating textarea.form-control{
+      border-radius: 16px;
+    }
+  }
+  .btn{
+    margin-top: 16px;
+    background: #fff;
+    color: #1d1643;
+    width: 135px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #formSending{
+    p.strong {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      span {
+        background: #fff;
+        height: 6px;
+        width: 6px;
+        border-radius: 100%;
+        margin: 0 3px;
+        animation: sending 1s infinite;
+        &:first-child{
+          margin-left: 6px;
+        }
+        &:nth-child(2){
+          animation-delay: 200ms;
+        }
+        &:last-child{
+          animation-delay: 300ms;
+        }
+      }
+    }
+  }
+  #workUsSending{
+    p.strong {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      span {
+        background: #fff;
+        height: 6px;
+        width: 6px;
+        border-radius: 100%;
+        margin: 0 3px;
+        animation: sending 1s infinite;
+        &:first-child{
+          margin-left: 6px;
+        }
+        &:nth-child(2){
+          animation-delay: 200ms;
+        }
+        &:last-child{
+          animation-delay: 300ms;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767.98px){
+  .contact{
+    padding-top: 122px;
+    padding-bottom: 45px;
+  }
+
+}
+@media (max-width: 767.98px){
+  .contact{
+    &_form_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
