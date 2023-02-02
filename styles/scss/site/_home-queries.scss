@@ -9,7 +9,7 @@
 @media (max-width: 1200.98px){
   .bussines{
     margin: auto;
-    #lightgallery {
+    #customers {
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
@@ -75,7 +75,7 @@
   }
   .bussines{
     margin: auto;
-    #lightgallery {
+    #customers {
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
       .item{
@@ -119,6 +119,24 @@
 
     }
   }
+  .text{
+    padding-top: 0;
+    p.display-4{
+      font-size: 24px;
+      line-height: 29px;
+      text-align: start;
+    }
+    p.h5{
+      font-size: 14px;
+      line-height: 19px;
+      text-align: start;
+    }
+    &_bricks{
+      max-width: 110px;
+      left: 0;
+      bottom: 9%;
+    }
+  }
 }
 @media (max-width: 767.98px) {
   .banner{
@@ -127,7 +145,6 @@
       bottom: 40px;
     }
   }
-
   .success{
     p{
       text-align: center;
@@ -154,7 +171,7 @@
     }
   }
   .bussines{
-    #lightgallery {
+    #customers {
       grid-template-columns: 1fr;
       gap: 15px;
       margin: auto;
@@ -164,7 +181,7 @@
 }
 @media (max-width: 560.98px) {
   .bussines{
-    #lightgallery {
+    #customers {
       width: 70%;
     }
   }
@@ -177,7 +194,7 @@
     }
   }
   .bussines{
-    #lightgallery {
+    #customers {
       width: 90%;
     }
   }

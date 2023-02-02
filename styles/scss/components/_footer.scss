@@ -1,6 +1,9 @@
 .footer-f{
   background-color: $primary;
   padding: 56px 0 75px 0;
+  .container{
+    position: relative;
+  }
   p, a{
     color: #FFFFFF;
   }

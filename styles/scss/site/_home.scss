@@ -41,6 +41,7 @@
     line-height: 48px;
     color: $primary;
     margin-bottom: 21px;
+    display: block;
   }
   .h5{
     font-weight: 400;
@@ -154,6 +155,16 @@
       text-align: center;
     }
   }
+  &_vector{
+    background: radial-gradient(43.2% 43.2% at 50% 50%, #6399FB 0%, #6399fbb2 32.1%, #976af000 97.4%);
+    width: 622px;
+    height: 622px;
+    position: absolute;
+    left: -311px;
+    bottom: 10%;
+    z-index: -1;
+    opacity: 0.25;
+  }
 }
 /*-----------------------------Band-------------------------------*/
 .container-band{
@@ -162,20 +173,17 @@
   padding: 17px 0;
   display: flex;
   white-space: nowrap;
-
+  overflow: hidden;
   .list{
     display: flex;
     align-items: top;
-    -webkit-animation: loop 2s infinite linear;
-    animation: loop 2s infinite linear;
-    column-gap: 10px;
+    -webkit-animation: loop 5s infinite linear;
+    animation: loop 5s infinite linear;
   }
-  span{
+  .item-txt{
     color: white;
     margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin-right: 52px;
     img{
       margin-left: 5px;
     }
@@ -247,7 +255,7 @@
   padding-bottom: 0;
   padding-top: 0;
   margin-top: 57px;
-  #lightgallery {
+  #customers {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -339,5 +347,14 @@
     font-weight: 600;
     line-height: 26px;
     color: #1D1643;
+    text-align: center;
+  }
+  &_bricks{
+    position: absolute;
+    max-width: 220px;
+    width: 100%;
+    left: 0;
+    bottom: 9%;
+    opacity: 0.1;
   }
 }

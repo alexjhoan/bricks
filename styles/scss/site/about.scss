@@ -1,4 +1,5 @@
 .intelligence{
+  background: #FAFAFF;
   padding-top: 92px;
   .h1{
     line-height: 48px;
@@ -36,6 +37,7 @@
 }
 
 .team{
+  background: #FAFAFF;
   p.h1{
     line-height: 48px;
     text-align: center;
@@ -92,6 +94,16 @@
         }
       }
     }
+  }
+  &_vector{
+    background: radial-gradient(43.2% 43.2% at 50% 50%, #6399FB 0%, #6399fbb2 32.1%, #976af000 97.4%);
+    width: 622px;
+    height: 622px;
+    position: absolute;
+    right: -311px;
+    top: 10%;
+    z-index: -1;
+    opacity: 0.25;
   }
 }
 @media (max-width: 1200.98px){

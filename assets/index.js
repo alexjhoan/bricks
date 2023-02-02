@@ -47,8 +47,14 @@ if (screen.width < 992) {
   });
 }
 /*------------------------------Bussines----------------------------------*/
-
-// ------------------------------Form-----------------------------
+function seeMore() {
+  let visibleItems = $('#customers .item:visible').length + ImgMore
+  $('#customers .item:lt('+visibleItems+')').fadeIn(800);
+  if(visibleItems >= items) {
+    $('.btnMore').hide();
+  }
+}
+/*------------------------------Form-----------------------------*/
 
 function dataSubmited(data) {
   const requestOptions = {
