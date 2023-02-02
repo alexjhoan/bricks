@@ -159,10 +159,8 @@
 .container-band{
   background: linear-gradient(90deg, #966BF6 0%, #6394F6 66.7%, #5DD7F6 100%);
   margin: 100px 0 0px;
-  display: flex;
-  flex-direction: row;
-  column-gap: 52px;
   padding: 17px 0;
+  display: flex;
   white-space: nowrap;
 
   .list{
@@ -330,6 +328,7 @@
   p.display-4{
     color: #1D154F;
     line-height: 68px;
+    text-align: center;
     span{
       background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
       -webkit-background-clip: text;
