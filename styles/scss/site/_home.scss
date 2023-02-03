@@ -9,9 +9,6 @@
     font-size: 54px;
     line-height: 65px;
     color: $primary;
-    span{
-      color: #fff;
-    }
   }
   .line{
     width: 36px;
@@ -198,6 +195,7 @@
 
 /*---------------------------Succes-------------------------------*/
 .success{
+  padding-top: 78px;
   p.h1{
     font-weight: 700;
     line-height: 48px;
@@ -247,14 +245,14 @@
     font-weight: 400;
     line-height: 26px;
     color: #4B4A5F;
-    margin-top: 47px;
+    margin-top: 37px;
   }
 }
 /*---------------------------Bussines-------------------------------*/
 .bussines{
   padding-bottom: 0;
   padding-top: 0;
-  margin-top: 57px;
+  margin-top: 25px;
   #customers {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -333,6 +331,8 @@
 }
 /*---------------------------Text-------------------------------*/
 .text{
+  padding-top: 107px;
+  padding-bottom: 147px;
   p.display-4{
     color: #1D154F;
     line-height: 68px;
@@ -354,7 +354,7 @@
     max-width: 220px;
     width: 100%;
     left: 0;
-    bottom: 9%;
+    bottom: 20%;
     opacity: 0.1;
   }
 }
