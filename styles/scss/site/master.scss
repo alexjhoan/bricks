@@ -64,3 +64,52 @@ section {
     font-weight: 500;
   }
 }
+div#btnGoToUp {
+  position: fixed;
+  bottom: 2%;
+  right: 25px;
+  width: auto;
+  padding: 0;
+  z-index: 10;
+  a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    box-shadow: 0px 0px 16px rgb(0 0 0 / 10%);
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50px;
+    .flecha-prin{
+      display: block;
+    }
+    .flecha-alt{
+      display: none;
+    }
+  }
+   a:focus {
+    outline: none;
+  }
+}
+div#btnGoToUp a:hover {
+  background: radial-gradient(58.98% 222.98% at 85.42% -28.89%, #5dcceb00, #6389EB 42.6%, #8B6BEB 84.2%);
+  .flecha-prin{
+    display: none;
+  }
+  .flecha-alt{
+    display: block;
+  }
+}

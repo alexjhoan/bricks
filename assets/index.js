@@ -47,6 +47,7 @@ if (screen.width < 992) {
   });
 }
 /*------------------------------Bussines----------------------------------*/
+
 function seeMore() {
   let visibleItems = $('#customers .item:visible').length + ImgMore
   $('#customers .item:lt('+visibleItems+')').fadeIn(800);
