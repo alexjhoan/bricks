@@ -1,8 +1,7 @@
 /*---------------------------Baner-------------------------------*/
 .banner{
-  background: $lineargradient;
-  padding-top: 98.14px;
-  padding-bottom: 110px;
+  background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
+  padding: 300px 0 200px;
   overflow-x: hidden;
   margin-top: -90px ;
   h1{
@@ -25,7 +24,7 @@
   .lupa-b {
     position: absolute;
     right: -30px;
-    top: 30px;
+    top: 235px;
     max-width: 486px;
     width: 100%;
   }
@@ -323,7 +322,7 @@
     text-align: center;
     span{
       background: $lineargradient;
-      -webkit-background-clip: text;
+      background-clip: text;
       color: transparent;
     }
   }
