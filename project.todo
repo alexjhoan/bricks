@@ -1,11 +1,12 @@
 animaciones pendientes:
-  [] animacion titulo del banner este título que vaya apareciendo línea por línea
-  [] animacion del header, cambiar de color el texto del link al hacer click
-  [] cuando se hace scroll en la pantalla el menú cambia a su versión con fondo blanco.
-  [] section marketing trabajar acordeon, q no salga desplegado
-  [] verificar funcionamiento de la banda de texto
-  [] boton de ir arriba
-  [] boton SeeMore no funciona
+  [+] animacion titulo del banner este título que vaya apareciendo línea por línea
+  [+] animacion del header, cambiar de color el texto del link al hacer click
+  [+] cuando se hace scroll en la pantalla el menú cambia a su versión con fondo blanco.
+  [+] section marketing trabajar acordeon, q no salga desplegado
+  [+] verificar funcionamiento de la banda de texto
+  [+] transition a las cards
+  [+] boton de ir arriba
+  [+] boton SeeMore no funciona
   [] animacion de seccion debajo del banner como la de firenze
 
 project tags:
