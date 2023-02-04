@@ -1,17 +1,21 @@
 $(window).on("load", function () {
   $("body").css("opacity", "1");
-  $(".linkTo").click(function (e) {
-    e.preventDefault();
-    $("header .collapse.show").removeClass("show");
-    const url = $(this).attr("href");
-    const header = $("header").height();
-    if (!url.includes("html")) {
-      const section = $(url.slice(1)).offset().top;
-      window.scrollTo({ top: section - header, behavior: "smooth" });
-    } else {
-      window.location = url;
-    }
-  });
+  if (window.location.href.includes("about")) {
+    $('a[href="about.html"]').addClass("active");
+  } else {
+    $(".linkTo").click(function (e) {
+      e.preventDefault();
+      $("header .collapse.show").removeClass("show");
+      const url = $(this).attr("href");
+      const header = $("header").height();
+      if (!url.includes("html")) {
+        const section = $(url.slice(1)).offset().top;
+        window.scrollTo({ top: section - header, behavior: "smooth" });
+      } else {
+        window.location = url;
+      }
+    });
+  }
 });
 
 let offset;
