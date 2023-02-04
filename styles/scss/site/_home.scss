@@ -1,6 +1,6 @@
 /*---------------------------Baner-------------------------------*/
 .banner{
-  background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
+  background: $lineargradient;
   padding-top: 98.14px;
   padding-bottom: 110px;
   overflow-x: hidden;
@@ -11,14 +11,13 @@
     color: $primary;
   }
   .line{
-    width: 36px;
     border: 4px solid $primary;
     margin: 30px 0px 21px 0px;
   }
   p.h5{
     font-weight: 400;
     line-height: 24px;
-    color: #FFFFFF;
+    color: $white;
   }
   a.btn{
     margin-top: 26px;
@@ -36,14 +35,12 @@
   padding-top: 92px;
   .h1{
     line-height: 48px;
-    color: $primary;
     margin-bottom: 21px;
     display: block;
   }
   .h5{
     font-weight: 400;
     line-height: 26px;
-    color: #4B4A5F;
     margin-bottom: 20px;
   }
   img{
@@ -68,8 +65,11 @@
   &_b{
     margin-top: 60px;
   }
+  .p.h5{
+    margin-top: 21px;
+  }
   &_grid{
-    margin-top: 56px;
+    margin-top: 79px;
     .sgrid{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -78,26 +78,21 @@
       align-items: start;
     }
     .item{
-      background: #FFFFFF;
+      background: $white;
       box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
       border-radius: 16px;
       padding: 0px 42px 16px 42px;
       p{
         font-weight: 400;
         line-height: 22px;
-        color: #4B4A5F;
         text-align: center;
       }
       p.h4{
         font-weight: 600;
         line-height: 29px;
-        color: #1D1643;
         text-align: center;
       }
       .line{
-        background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
-        height: 4px;
-        width: 36px;
         margin: 17px auto;
         left: 0;
         right: 0;
@@ -105,7 +100,7 @@
       &_imgcircle {
         box-shadow: 0px 0px 16px rgb(0 0 0 / 8%);
         transform: translateY(-30px);
-        background-color: #fff;
+        background-color: $white;
         border-radius: 50px;
         width: 70px;
         height: 70px;
@@ -140,7 +135,7 @@
         margin: auto;
       }
       &:not(.collapsed){
-        background-color: white;
+        background-color: $white;
         box-shadow: none;
         left: 0;
         right: 0;
@@ -153,7 +148,7 @@
     }
   }
   &_vector{
-    background: radial-gradient(43.2% 43.2% at 50% 50%, #6399FB 0%, #6399fbb2 32.1%, #976af000 97.4%);
+    background: $radialgradient;
     width: 622px;
     height: 622px;
     position: absolute;
@@ -165,7 +160,7 @@
 }
 /*-----------------------------Band-------------------------------*/
 .container-band{
-  background: linear-gradient(90deg, #966BF6 0%, #6394F6 66.7%, #5DD7F6 100%);
+  background: $lineargradient;
   margin: 100px 0 0px;
   padding: 17px 0;
   display: flex;
@@ -178,7 +173,7 @@
     animation: loop 5s infinite linear;
   }
   .item-txt{
-    color: white;
+    color: $white;
     margin-bottom: 0;
     margin-right: 52px;
     img{
@@ -199,12 +194,10 @@
   p.h1{
     font-weight: 700;
     line-height: 48px;
-    color: #1D1643;
   }
   p.h5{
     font-weight: 400;
     line-height: 26px;
-    color: #4B4A5F;
   }
   img{
     max-width: 305px;
@@ -220,23 +213,19 @@
       align-items: center;
       margin-top: 40px;
       margin-right: 80px;
-      p.display-6{
+      p.h2{
         font-weight: 800;
         font-size: 36px;
         line-height: 44px;
-        color: #1D154F;
         margin-bottom: 5px;
       }
       p.h5{
         font-weight: 700;
         line-height: 24px;
-        color: #1D1643;
+        color: $primary;
         margin-bottom: 0;
       }
       .line{
-        background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
-        height: 4px;
-        width: 36px;
         margin: 10px 0;
       }
     }
@@ -244,7 +233,6 @@
   p.h5.ext{
     font-weight: 400;
     line-height: 26px;
-    color: #4B4A5F;
     margin-top: 37px;
   }
 }
@@ -260,7 +248,7 @@
     .item{
       position: relative;
       .card{
-        background: #FFFFFF;
+        background: $white;
         box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
         border-radius: 16px;
         margin: auto;
@@ -295,13 +283,10 @@
           }
         }
         .line{
-          background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
-          height: 4px;
-          width: 36px;
           margin-bottom: 10px;
         }
         p, a{
-          color: white;
+          color: $white;
         }
         .footer{
           display: flex;
@@ -320,7 +305,7 @@
   .btnMore{
     text-align: center;
     .btn{
-      background: radial-gradient(58.98% 222.98% at 85.42% -28.89%, #5DCCEB 0%, #6389EB 42.6%, #8B6BEB 84.2%);
+      background: $degraded;
       padding: 17px 22px 17px 26px;
       gap: 4px;
       img{
@@ -334,11 +319,10 @@
   padding-top: 107px;
   padding-bottom: 147px;
   p.display-4{
-    color: #1D154F;
     line-height: 68px;
     text-align: center;
     span{
-      background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
+      background: $lineargradient;
       -webkit-background-clip: text;
       color: transparent;
     }
@@ -346,7 +330,7 @@
   p.h5{
     font-weight: 600;
     line-height: 26px;
-    color: #1D1643;
+    color: $primary;
     text-align: center;
   }
   &_bricks{

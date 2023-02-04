@@ -5,14 +5,12 @@
     position: relative;
   }
   p, a{
-    color: #FFFFFF;
+    color: $white;
   }
   p.h1{
     line-height: 48px;
   }
   .line{
-    background: linear-gradient(90deg, #966BF6 13.14%, #6394F6 71.08%, #5DD7F6 100%);
-    height: 4px;
     width: 36px;
     margin: 13px 0 40px;
   }

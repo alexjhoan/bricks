@@ -3,20 +3,23 @@
 }
 
 body{
-  background: #FAFAFF;
+  background: $lightestgrey;
   opacity: 0;
   overflow-x: hidden;
 }
 
-p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
+p.display-6, p.display-5, p.display-4, p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   font-family: Inter;
-  color: $text;
+  color: $primary;
   font-style: normal;
+}
+p, p.h5, h5, p.h6, h6{
+  color: $text;
 }
 
 a,p,div,input,button,textarea{
   font-family: Inter;
-  color: $text-secondary;
+  color: $text;
 }
 
 a{
@@ -33,36 +36,42 @@ section {
 }
 
 .btn.btn-primary {
-  background-color: $primary;
-  border-color: $primary;
-  border-radius: 0;
-  padding: 10px 100px;
-  color: $white;
+  background-color: $white;
+  padding: 17px 22px 17px 26px;
+  gap: 4px;
+  border-radius: 80px;
+  border: none;
+  color: $primary;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
-  background-color: $btn-hover!important;
-  border-color: $btn-hover!important;
-  box-shadow: none!important;
+  box-shadow: 0px 4px 4px #00000040;
 }
 .btn.btn-secondary{
   padding: 17px 22px 17px 26px;
   gap: 4px;
-  background: radial-gradient(58.98% 222.98% at 85.42% -28.89%, #5dcceb00, #6389EB 42.6%, #8B6BEB 84.2%);
+  background: $degraded;
   border-radius: 80px;
   border: none;
+  color: $white;
 }
 .btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus{
   box-shadow: 0px 4px 4px #00000040;
 }
 
+.line{
+  background: $lineargradient;
+  height: 4px;
+  width: 36px;
+}
+
 @media (max-width: 991.98px) {
-  .btn.btn-secondary{
-    background: #FFFFFF;
-    color: #1D1643;
-    font-size: 16px;
-    font-weight: 500;
-  }
+  // .btn.btn-secondary{
+  //   background: $white;
+  //   color: $primary;
+  //   font-size: 16px;
+  //   font-weight: 500;
+  // }
 }
 div#btnGoToUp {
   position: fixed;
@@ -105,7 +114,7 @@ div#btnGoToUp {
   }
 }
 div#btnGoToUp a:hover {
-  background: radial-gradient(58.98% 222.98% at 85.42% -28.89%, #5dcceb00, #6389EB 42.6%, #8B6BEB 84.2%);
+  background: $degraded;
   .flecha-prin{
     display: none;
   }

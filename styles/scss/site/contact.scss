@@ -1,16 +1,13 @@
 .contact{
   padding-bottom: 104px;
   padding-top: 169px;
-  background: #FAFAFF;
   p.h1{
     line-height: 48px;
-    color: #1D1643;
     margin-bottom: 24px;
   }
   p.h5{
     font-weight: 400;
     line-height: 26px;
-    color: #4B4A5F;
     margin-bottom: 35px;
   }
   #contactForm {
@@ -19,7 +16,7 @@
     align-items: center;
     justify-content: center;
     padding: 30px;
-    background: radial-gradient(58.98% 222.98% at 85.42% -28.89%, #5dcceb00, #6389EB 42.6%, #8B6BEB 84.2%);
+    background: $degraded;
     left: 0;
     right: 0;
     border-radius: 16px;
@@ -47,8 +44,8 @@
   }
   .btn{
     margin-top: 16px;
-    background: #fff;
-    color: #1d1643;
+    background: $white;
+    color: $primary;
     width: 135px;
     height: 50px;
     display: flex;
@@ -62,7 +59,7 @@
       flex-direction: row;
       align-items: baseline;
       span {
-        background: #fff;
+        background: $white;
         height: 6px;
         width: 6px;
         border-radius: 100%;
@@ -86,7 +83,7 @@
       flex-direction: row;
       align-items: baseline;
       span {
-        background: #fff;
+        background: $white;
         height: 6px;
         width: 6px;
         border-radius: 100%;

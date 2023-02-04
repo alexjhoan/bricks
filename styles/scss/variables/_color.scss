@@ -1,17 +1,25 @@
 $primary: #1D1643;
 $secondary: #033545;
-$text: #12446e;
-$text-secondary: #425762;
-$text-hover: #1D1643;
-$btn: #a3a3a3;
-$btn-hover: #a3a3a3;
+$text: #4B4A5F;
+// $text-secondary: #425762;
+// $text-hover: #1D1643;
+// $btn: #a3a3a3;
+// $btn-hover: #a3a3a3;
 
 $white: #fff;
 $black: #000;
 
-$lightestgrey: #F5F5F5;
-$lightergrey: #D3D4D3;
-$lightgrey: #B6B7B7;
-$darkgrey: #86888C;
-$darkergrey: #50535A;
-$darkestgrey: #313235;
+$lightestgrey: #FAFAFF;
+// $lightergrey: #D3D4D3;
+// $lightgrey: #B6B7B7;
+// $darkgrey: #86888C;
+// $darkergrey: #50535A;
+// $darkestgrey: #313235;
+
+$purple: #966BF6;
+$lightblue:#6394F6;
+$turquoise: #5DD7F6;
+
+$degraded: radial-gradient(58.98% 222.98% at 85.42% -28.89%, #5dcceb00, #6389EB 42.6%, #8B6BEB 84.2%);
+$lineargradient: linear-gradient(90deg, $purple 13.14%, $lightblue 71.08%, $turquoise 100%);
+$radialgradient: radial-gradient(43.2% 43.2% at 50% 50%, #6399FB 0%, #6399fbb2 32.1%, #976af000 97.4%);
