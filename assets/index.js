@@ -49,7 +49,7 @@ $(window).on("load", function () {
 
 /*---------------------------------Header------------------------------------*/
 
-$(window).on("scroll", function () {
+function headerAlt() {
   const scroll = $(window).scrollTop();
   const header = $("header");
   if (scroll > header.height()) {
@@ -57,6 +57,99 @@ $(window).on("scroll", function () {
   } else {
     header.removeClass("nav-down");
   }
+}
+
+/*---------------------------------Market-Section-----------------------------------*/
+
+function MarketAnimation(
+  item,
+  heightElem,
+  offsetTop,
+  parentHeight,
+  parentOffsetTop
+) {
+  const scroll = $(window).scrollTop();
+  const container = $(item);
+  const heightWindow = $(window).height() / 2;
+  parentHeight = parentHeight / 4;
+
+  console.log(parentOffsetTop);
+  console.log(parentHeight);
+  if (
+    scroll > offsetTop - heightWindow &&
+    scroll < heightElem + offsetTop - heightWindow
+  ) {
+    container.addClass("show slideInUp");
+    $(`${item} .animated`).addClass("slideInUp");
+  } else {
+    container.removeClass("show slideInUp");
+    $(`${item} .animated`).removeClass("slideInUp");
+    if (scroll > parentOffsetTop + parentHeight) {
+      $("#scrollItem3").css({
+        visibility: "visible",
+        position: "relative",
+      });
+      $("#scrollItem1").removeAttr("style");
+      console.log("abajo");
+    } else {
+      $("#scrollItem1").css({
+        visibility: "visible",
+        position: "relative",
+      });
+      $("#scrollItem3").removeAttr("style");
+      console.log("arriba");
+    }
+  }
+}
+
+/*-------------------------------sections-by-scroll----------------------------------*/
+
+const containers = {
+  parent: {
+    id: "#market",
+    height: $("#market").height(),
+    offsetTop: $("#market").offset().top,
+  },
+  item1: {
+    id: "#scrollItem1",
+    height: $("#scrollItem1").height(),
+    offsetTop: $("#scrollItem1").offset().top,
+  },
+  item2: {
+    id: "#scrollItem2",
+    height: $("#scrollItem2").height(),
+    offsetTop: $("#scrollItem2").offset().top,
+  },
+  item3: {
+    id: "#scrollItem3",
+    height: $("#scrollItem3").height(),
+    offsetTop: $("#scrollItem3").offset().top,
+  },
+};
+
+$(window).on("scroll", function () {
+  headerAlt();
+  MarketAnimation(
+    containers.item1.id,
+    containers.item1.height,
+    containers.item1.offsetTop,
+    containers.parent.height,
+    containers.parent.offsetTop
+  );
+  MarketAnimation(
+    containers.item2.id,
+    containers.item2.height,
+    containers.item2.offsetTop,
+    containers.parent.height,
+    containers.parent.offsetTop
+  );
+  MarketAnimation(
+    containers.item3.id,
+    containers.item3.height,
+    containers.item3.offsetTop,
+    containers.parent.height,
+    containers.parent.offsetTop
+  );
 });
 
 /*-------------------------------Market Grid----------------------------------*/
