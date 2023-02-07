@@ -1,11 +1,11 @@
+$("header").load("components/header.html");
+$("footer").load("components/footer.html");
 $(window).on("load", function () {
   $("body").css("opacity", "1");
 
   let offset = screen.width > 768 ? 200 : 0;
   new WOW({ offset: offset, scrollContainer: null }).init();
 
-  $("header").load("components/header.html");
-  $("footer").load("components/footer.html");
   if (window.location.href.includes("about")) {
     $('a[href="about.html"]').addClass("active");
   } else {
