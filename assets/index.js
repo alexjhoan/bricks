@@ -28,23 +28,20 @@ $(window).on("load", function () {
   });
 
   /*------------------------------Bussines----------------------------------*/
-
-  if (screen.width > 767.98) {
-    const items = $("#customers .item").length;
-    const imgInit = screen.width > 768 ? 12 : 4;
-    const ImgMore = screen.width > 768 ? 12 : 4;
-    $("#customers .item:lt(" + imgInit + ")").show();
-    if (imgInit >= items) {
+  const items = $("#customers .item").length;
+  const imgInit = screen.width > 768 ? 12 : 4;
+  const ImgMore = screen.width > 768 ? 12 : 4;
+  $("#customers .item:lt(" + imgInit + ")").show();
+  if (imgInit >= items) {
+    $(".btnMore").hide();
+  }
+  $("#seeMore").click(function () {
+    let visibleItems = $("#customers .item:visible").length + ImgMore;
+    $("#customers .item:lt(" + visibleItems + ")").fadeIn(800);
+    if (visibleItems >= items) {
       $(".btnMore").hide();
     }
-    $("#seeMore").click(function () {
-      let visibleItems = $("#customers .item:visible").length + ImgMore;
-      $("#customers .item:lt(" + visibleItems + ")").fadeIn(800);
-      if (visibleItems >= items) {
-        $(".btnMore").hide();
-      }
-    });
-  }
+  });
 });
 
 /*---------------------------------Header------------------------------------*/
@@ -156,7 +153,9 @@ const containers = {
 
 $(window).on("scroll", function () {
   headerAlt();
-  MarketAnimation(containers);
+  if (screen.width > 991.98) {
+    MarketAnimation(containers);
+  }
 });
 
 /*-------------------------------Market Grid----------------------------------*/
