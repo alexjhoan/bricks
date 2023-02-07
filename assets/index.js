@@ -61,43 +61,70 @@ function headerAlt() {
 
 /*---------------------------------Market-Section-----------------------------------*/
 
-function MarketAnimation(
-  item,
-  heightElem,
-  offsetTop,
-  parentHeight,
-  parentOffsetTop
-) {
-  const scroll = $(window).scrollTop();
-  const container = $(item);
-  const heightWindow = $(window).height() / 2;
-  parentHeight = parentHeight / 4;
+function MarketAnimation(containers) {
+  const scroll = $(window).scrollTop() + $(window).height() / 2;
+  const paddingParent = 270; // 100 paddingTop + 170 height half sections
 
-  console.log(parentOffsetTop);
-  console.log(parentHeight);
   if (
-    scroll > offsetTop - heightWindow &&
-    scroll < heightElem + offsetTop - heightWindow
+    scroll > containers.parent.offsetTop + paddingParent &&
+    scroll <
+      containers.parent.height + containers.parent.offsetTop - paddingParent
   ) {
-    container.addClass("show slideInUp");
-    $(`${item} .animated`).addClass("slideInUp");
+    if (
+      scroll > containers.item1.offsetTop &&
+      scroll < containers.item2.offsetTop
+    ) {
+      console.log("section 1");
+      $("#scrollItem1")
+        .removeAttr("style")
+        .addClass("show")
+        .siblings()
+        .removeClass("show");
+      $(`#scrollItem1 .animated`).addClass("slideInUp");
+      $("#scrollItem1").siblings().find(".animated").removeClass("slideInUp");
+    } else if (
+      scroll > containers.item2.offsetTop &&
+      scroll < containers.item3.offsetTop
+    ) {
+      console.log("section 2");
+      $(`#scrollItem2 .animated`).addClass("slideInUp");
+      $("#scrollItem2").addClass("show").siblings().removeClass("show");
+      $("#scrollItem2").siblings().find(".animated").removeClass("slideInUp");
+    } else if (
+      scroll > containers.item3.offsetTop &&
+      scroll < containers.parent.height + containers.parent.offsetTop
+    ) {
+      console.log("section 3");
+      $("#scrollItem3")
+        .removeAttr("style")
+        .addClass("show")
+        .siblings()
+        .removeClass("show");
+      $(`#scrollItem3 .animated`).addClass("slideInUp");
+      $("#scrollItem3").siblings().find(".animated").removeClass("slideInUp");
+    }
   } else {
-    container.removeClass("show slideInUp");
-    $(`${item} .animated`).removeClass("slideInUp");
-    if (scroll > parentOffsetTop + parentHeight) {
-      $("#scrollItem3").css({
-        visibility: "visible",
-        position: "relative",
-      });
-      $("#scrollItem1").removeAttr("style");
+    $(`${containers.parent.id} .show`).removeClass("show");
+    if (scroll > containers.parent.offsetTop + containers.parent.height / 2) {
       console.log("abajo");
+      $("#scrollItem3")
+        .css({
+          position: "relative",
+          visibility: "visible",
+        })
+        .addClass("slideInUp")
+        .siblings()
+        .removeAttr("style");
     } else {
-      $("#scrollItem1").css({
-        visibility: "visible",
-        position: "relative",
-      });
-      $("#scrollItem3").removeAttr("style");
       console.log("arriba");
+      $("#scrollItem1")
+        .css({
+          position: "relative",
+          visibility: "visible",
+        })
+        .addClass("slideInUp")
+        .siblings()
+        .removeAttr("style");
     }
   }
 }
@@ -107,7 +134,7 @@ function MarketAnimation(
 const containers = {
   parent: {
     id: "#market",
-    height: $("#market").height(),
+    height: $("#market").height() + 200, //paddings
     offsetTop: $("#market").offset().top,
   },
   item1: {
@@ -129,27 +156,7 @@ const containers = {
 
 $(window).on("scroll", function () {
   headerAlt();
-  MarketAnimation(
-    containers.item1.id,
-    containers.item1.height,
-    containers.item1.offsetTop,
-    containers.parent.height,
-    containers.parent.offsetTop
-  );
-  MarketAnimation(
-    containers.item2.id,
-    containers.item2.height,
-    containers.item2.offsetTop,
-    containers.parent.height,
-    containers.parent.offsetTop
-  );
-  MarketAnimation(
-    containers.item3.id,
-    containers.item3.height,
-    containers.item3.offsetTop,
-    containers.parent.height,
-    containers.parent.offsetTop
-  );
+  MarketAnimation(containers);
 });
 
 /*-------------------------------Market Grid----------------------------------*/
