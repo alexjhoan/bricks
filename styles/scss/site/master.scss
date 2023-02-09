@@ -42,6 +42,7 @@ section {
   border-radius: 80px;
   border: none;
   color: $primary;
+  font-weight: 500;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
@@ -54,6 +55,7 @@ section {
   border-radius: 80px;
   border: none;
   color: $white;
+  font-weight: 500;
 }
 .btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus{
   box-shadow: 0px 4px 4px #00000040;
