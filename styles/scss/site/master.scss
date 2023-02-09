@@ -104,6 +104,19 @@ div#btnGoToUp {
 
 }
 
+@media (max-width: 992px){
+  div#btnGoToUp {
+    &:hover{
+      img{
+        filter: brightness(0) invert(0);
+      }
+      &::before{
+        opacity: 0;
+      }
+    }
+
+  }
+}
 @media (max-width: 567px) {
   h5,p.h5{
     font-size: 1rem;
