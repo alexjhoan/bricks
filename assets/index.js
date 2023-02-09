@@ -56,6 +56,12 @@ function headerAlt() {
   }
 }
 
+// (function () {
+//     $('.navbar-toggler').on('click', function() {
+//       $('.bar').toggleClass('animate');
+//       })
+//   })();
+
 /*---------------------------------Market-Section-----------------------------------*/
 
 function MarketAnimation(containers) {

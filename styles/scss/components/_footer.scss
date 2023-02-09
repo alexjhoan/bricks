@@ -51,6 +51,7 @@
     flex-direction: row;
     column-gap: 39px;
     align-items: center;
+    pointer-events: none;
   }
 }
 
@@ -81,6 +82,12 @@
       grid-template-columns: 1fr 1fr;
       column-gap: 21px;
       row-gap: 12px;
+    }
+    &_contacto{
+      a{
+        font-size: 16px;
+        font-weight: 400;
+      }
     }
   }
 }

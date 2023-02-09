@@ -63,6 +63,7 @@ section {
   background: $lineargradient;
   height: 4px;
   width: 36px;
+  border-radius: 5px;
 }
 
 div#btnGoToUp {
@@ -100,6 +101,7 @@ div#btnGoToUp {
       opacity: 1;
     }
   }
+
 }
 
 @media (max-width: 567px) {

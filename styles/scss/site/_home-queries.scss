@@ -123,6 +123,7 @@
   }
   .text{
     padding-top: 0;
+    padding-bottom: 90px;
     p.display-4{
       font-size: 24px;
       line-height: 29px;
@@ -134,9 +135,10 @@
       text-align: start;
     }
     &_bricks{
-      max-width: 110px;
-      left: 0;
-      bottom: 9%;
+      max-width: 160px;
+      left: auto;
+      bottom: 30%;
+      right: -70px;
     }
   }
 }
@@ -157,6 +159,7 @@
     }
     &_conter{
       flex-direction: column;
+      align-items: center;
       .item{
         margin-right: 0;
         margin-top: 24px;
@@ -164,12 +167,20 @@
           font-size: 32px;
           line-height: 26px;
         }
+        .line{
+          margin: 10px auto;
+        }
       }
     }
     p.h5.ext{
       font-size: 16px;
       line-height: 22px;
       margin-top: 39px;
+      width: 90%;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   .bussines{

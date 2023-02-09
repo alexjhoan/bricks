@@ -2,12 +2,12 @@
   padding-bottom: 104px;
   padding-top: 169px;
   p.h1{
-    line-height: 48px;
+    line-height: 29px;
     margin-bottom: 24px;
   }
   p.h5{
     font-weight: 400;
-    line-height: 26px;
+    line-height: 22px;
     margin-bottom: 35px;
   }
   #contactForm {
@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 24px 30px;
     background: $degraded;
     left: 0;
     right: 0;
@@ -30,16 +30,19 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0px 24px;
+    padding: 0px 0px 16px 0px;
     gap: 16px;
     .form-floating {
       width: 100%;
       .form-control{
-        border-radius: 16px;
+        border-radius: 8px;
       }
-    }
-    .form-floating textarea.form-control{
-      border-radius: 16px;
+      label.form-label {
+        color: #565656;
+      }
+      label {
+        color: #565656;
+      }
     }
   }
   .btn{
@@ -52,6 +55,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    &:hover{
+      background-color: $primary;
+      color: $white;
+      box-shadow: none;
+      img{
+        filter: invert(1);
+      }
+    }
   }
   #formSending{
     p.strong {
@@ -106,6 +119,9 @@
   .contact{
     padding-top: 122px;
     padding-bottom: 45px;
+    #contactForm {
+      padding: 24px 13px;
+    }
   }
 
 }
