@@ -271,3 +271,14 @@ if (screen.width > 992) {
   let maxHeightTitle = maxHeight($("#marketing .item .item_content"));
   $("#marketing .item .item_content").css("height", +maxHeightTitle + "px");
 }
+
+
+/*------------------------CountUp-------------------*/
+$(document).ready(function(){
+  var countOptions = {
+    useEasing: true,
+    separator: ''
+  }
+  var count = new CountUp('MyNumber', 0, 100, 0, 5, countOptions)
+  count.start()
+ });
