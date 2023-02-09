@@ -56,11 +56,27 @@ function headerAlt() {
   }
 }
 
-// (function () {
-//     $('.navbar-toggler').on('click', function() {
-//       $('.bar').toggleClass('animate');
-//       })
-//   })();
+function triggerBtnNMobile() {
+  $(".header_mobile").trigger("click");
+}
+
+function headerAltMobile(btn) {
+  const scroll = $(window).scrollTop();
+  const header = $("header");
+
+  $(btn).toggleClass("header_mobile_show");
+  if ($(btn).hasClass("header_mobile_show")) {
+    $("html").css({ overflow: "hidden" });
+    $("header").addClass("nav-down");
+    $("#collapse_backdrop").addClass("show");
+  } else {
+    $("html").removeAttr("style");
+    $("#collapse_backdrop").removeClass("show");
+    if (scroll < header.height()) {
+      $("header").removeClass("nav-down");
+    }
+  }
+}
 
 /*---------------------------------Market-Section-----------------------------------*/
 
