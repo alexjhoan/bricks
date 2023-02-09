@@ -274,11 +274,11 @@ if (screen.width > 992) {
 
 
 /*------------------------CountUp-------------------*/
-$(document).ready(function(){
-  var countOptions = {
-    useEasing: true,
-    separator: ''
-  }
-  var count = new CountUp('MyNumber', 0, 100, 0, 5, countOptions)
-  count.start()
- });
+// $(document).ready(function(){
+//   const countOptions = {
+//     useEasing: true,
+//     separator: ''
+//   }
+//   const count = new CountUp('MyNumber', 100)
+//   count.start()
+//  });

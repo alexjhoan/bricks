@@ -284,7 +284,13 @@
         img{
           width: 200px;
           margin: auto;
-          max-height: 70px;
+          max-height: 65px;
+        }
+        .img-zetta {
+          max-height: 95px !important;
+        }
+        .img-oga {
+          max-height: 75px !important;
         }
       }
       .card-b{
