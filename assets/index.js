@@ -11,10 +11,11 @@ $(window).on("load", function () {
   } else {
     $(".linkTo").click(function (e) {
       e.preventDefault();
-      $("header .collapse.show").removeClass("show");
+      // $("header .collapse.show").removeClass("show");
+      triggerBtnNMobile();
       const url = $(this).attr("href");
       const header = $("header").height();
-      if (!url.includes("html")) {
+      if (!url.includes("html") && !window.location.href.includes("contact")) {
         const section = $(url.slice(1)).offset().top;
         window.scrollTo({ top: section - header, behavior: "smooth" });
       } else {
@@ -93,7 +94,6 @@ function MarketAnimation(containers) {
       scroll > containers.item1.offsetTop &&
       scroll < containers.item2.offsetTop
     ) {
-      console.log("section 1");
       $("#scrollItem1")
         .removeAttr("style")
         .addClass("show")
@@ -105,7 +105,6 @@ function MarketAnimation(containers) {
       scroll > containers.item2.offsetTop &&
       scroll < containers.item3.offsetTop
     ) {
-      console.log("section 2");
       $(`#scrollItem2 .animated`).addClass("slideInUp");
       $("#scrollItem2").addClass("show").siblings().removeClass("show");
       $("#scrollItem2").siblings().find(".animated").removeClass("slideInUp");
@@ -113,7 +112,6 @@ function MarketAnimation(containers) {
       scroll > containers.item3.offsetTop &&
       scroll < containers.parent.height + containers.parent.offsetTop
     ) {
-      console.log("section 3");
       $("#scrollItem3")
         .removeAttr("style")
         .addClass("show")
@@ -125,7 +123,6 @@ function MarketAnimation(containers) {
   } else {
     $(`${containers.parent.id} .show`).removeClass("show");
     if (scroll > containers.parent.offsetTop + containers.parent.height / 2) {
-      console.log("abajo");
       $("#scrollItem3")
         .css({
           position: "relative",
@@ -135,7 +132,6 @@ function MarketAnimation(containers) {
         .siblings()
         .removeAttr("style");
     } else {
-      console.log("arriba");
       $("#scrollItem1")
         .css({
           position: "relative",
@@ -287,4 +283,3 @@ if (screen.width > 992) {
   let maxHeightTitle = maxHeight($("#marketing .item .item_content"));
   $("#marketing .item .item_content").css("height", +maxHeightTitle + "px");
 }
-
