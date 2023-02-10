@@ -54,7 +54,7 @@
   }
   .h5{
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 26px;
     margin-bottom: 20px;
   }
   img{
@@ -97,6 +97,7 @@
   p.h5{
     margin-top: 25px;
     font-weight: 400;
+    line-height: 26px;
   }
   &_grid{
     margin-top: 79px;
@@ -268,7 +269,6 @@
 .bussines{
   padding-bottom: 0;
   padding-top: 0;
-  margin-top: 25px;
   #customers {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -374,10 +374,10 @@
   }
   &_bricks{
     position: absolute;
-    max-width: 220px;
+    max-width: 420px;
     width: 100%;
-    left: -65px;
-    bottom: 20%;
+    left: -160px;
+    bottom: 15%;
     opacity: 0.1;
   }
 }

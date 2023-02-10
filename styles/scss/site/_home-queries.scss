@@ -12,10 +12,9 @@
     padding: 80px 0 0;
     .scrollItem{
       visibility: visible;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       .market_col{
         margin-bottom: 30px;
-
       }
     }
   }
@@ -26,7 +25,7 @@
       bottom: 30px;
       max-width: 355px;
       width: 100%;
-      right: -30px;
+      right: -50px;
     }
     h1{
       font-size: 32px;
@@ -117,8 +116,9 @@
           }
         }
       }
-
-
+    }
+    .btnMore .btn {
+      margin-bottom: 24px;
     }
   }
   .text{
@@ -147,6 +147,15 @@
     padding: 200px 0 340px;
     .lupa-b {
       bottom: 40px;
+    }
+  }
+  .market{
+    img {
+      max-width: 188px;
+      margin-bottom: 33px;
+    }
+    &_center{
+      text-align: center;
     }
   }
   .success{
