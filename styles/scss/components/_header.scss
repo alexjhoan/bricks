@@ -33,8 +33,7 @@ header {
         color: $purple;
       }
       &:hover {
-        box-sizing: border-box;
-        text-shadow: 0px 4px 4px #00000040;
+        color: $white;
       }
     }
     a.letstalk {
@@ -46,7 +45,8 @@ header {
       transition: all ease-in-out .3s;
       text-transform: uppercase;
       &:hover {
-        box-shadow: 0px 4px 4px #00000040;
+        background-color: $primary;
+        color: white;
       }
     }
   }
@@ -58,9 +58,20 @@ header {
     .logo{
       filter: none;
     }
-    ul.navbar-nav a.letstalk{
-      background: $lineargradient;
-      color: $white;
+    ul.navbar-nav{
+      a.nav-link {
+        &:hover {
+          color: $purple;
+        }
+      }
+      a.letstalk{
+        background: $lineargradient;
+        color: $white;
+        &:hover {
+          box-shadow: 0px 4px 4px #00000040;
+          color: white;
+        }
+      }
     }
     .header_mobile{
         span {
@@ -109,9 +120,20 @@ header {
     .logo{
       filter: none;
     }
-    ul.navbar-nav a.letstalk{
-      background: $lineargradient;
-      color: $white;
+    ul.navbar-nav {
+      a.nav-link {
+        &:hover {
+          color: $purple;
+        }
+      }
+      a.letstalk{
+        background: $lineargradient;
+        color: $white;
+        &:hover {
+          box-shadow: 0px 4px 4px #00000040;
+          color: white;
+        }
+      }
     }
     .header_mobile{
       span {
@@ -120,6 +142,7 @@ header {
     }
   }
 }
+
 
 /*----------------------------Queries-------------------------------*/
 

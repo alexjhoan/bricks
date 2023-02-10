@@ -288,13 +288,3 @@ if (screen.width > 992) {
   $("#marketing .item .item_content").css("height", +maxHeightTitle + "px");
 }
 
-
-/*------------------------CountUp-------------------*/
-// $(document).ready(function(){
-//   const countOptions = {
-//     useEasing: true,
-//     separator: ''
-//   }
-//   const count = new CountUp('MyNumber', 100)
-//   count.start()
-//  });
