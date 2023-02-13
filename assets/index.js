@@ -146,28 +146,35 @@ function MarketAnimation(containers) {
 
 /*-------------------------------sections-by-scroll----------------------------------*/
 
-const containers = {
-  parent: {
-    id: "#market",
-    height: $("#market").height() + 200, //paddings
-    offsetTop: $("#market").offset().top,
-  },
-  item1: {
-    id: "#scrollItem1",
-    height: $("#scrollItem1").height(),
-    offsetTop: $("#scrollItem1").offset().top,
-  },
-  item2: {
-    id: "#scrollItem2",
-    height: $("#scrollItem2").height(),
-    offsetTop: $("#scrollItem2").offset().top,
-  },
-  item3: {
-    id: "#scrollItem3",
-    height: $("#scrollItem3").height(),
-    offsetTop: $("#scrollItem3").offset().top,
-  },
-};
+let containers = {};
+
+if (
+  !window.location.href.includes("about") &&
+  !window.location.href.includes("contact")
+) {
+  containers = {
+    parent: {
+      id: "#market",
+      height: $("#market").height() + 200, //paddings
+      offsetTop: $("#market").offset().top,
+    },
+    item1: {
+      id: "#scrollItem1",
+      height: $("#scrollItem1").height(),
+      offsetTop: $("#scrollItem1").offset().top,
+    },
+    item2: {
+      id: "#scrollItem2",
+      height: $("#scrollItem2").height(),
+      offsetTop: $("#scrollItem2").offset().top,
+    },
+    item3: {
+      id: "#scrollItem3",
+      height: $("#scrollItem3").height(),
+      offsetTop: $("#scrollItem3").offset().top,
+    },
+  };
+}
 
 $(window).on("scroll", function () {
   headerAlt();
