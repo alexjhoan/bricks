@@ -83,7 +83,8 @@ function headerAltMobile(btn) {
 
 function MarketAnimation(containers) {
   const scroll = $(window).scrollTop() + $(window).height() / 2;
-  const paddingParent = 270; // 100 paddingTop + 170 height half sections
+  // const paddingParent = 270; // 100 paddingTop + 170 height half sections
+  const paddingParent = screen.width > 991 ? 270 : 355; // 100 paddingTop + 170 height half sections
 
   if (
     scroll > containers.parent.offsetTop + paddingParent &&
@@ -178,9 +179,7 @@ if (
 
 $(window).on("scroll", function () {
   headerAlt();
-  if (screen.width > 991.98) {
-    MarketAnimation(containers);
-  }
+  MarketAnimation(containers);
 });
 
 /*-------------------------------Market Grid----------------------------------*/
