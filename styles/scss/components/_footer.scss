@@ -56,6 +56,16 @@
     column-gap: 39px;
     align-items: center;
     pointer-events: none;
+    a{
+      .logo-icons{
+        max-width: 160px;
+        width: 100%;
+      }
+      .icons-yapo{
+        max-width: 120px;
+        width: 100%;
+      }
+    }
   }
 }
 
