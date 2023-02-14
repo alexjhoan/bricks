@@ -219,7 +219,7 @@ function dataSubmited(data) {
     },
   };
   fetch(
-    "https://www.infocasas.com.uy?mid=formulario&func=ajax_save&json=1",
+    "https://prod.infocasas.com.uy/?mid=proyectos&func=contactobricks",
     requestOptions
   )
     .then((json) => {
@@ -244,17 +244,15 @@ function dataSubmited(data) {
 function submited() {
   const form = document.querySelector("#contactForm");
   const data = JSON.stringify({
-    nombre: form.name.value,
-    apellido: "",
+    nombre: form.firstname.value,
+    empresa: form.empresa.value,
     email: form.email.value,
-    telefono: form.phone.value,
-    tel: form.phone.value,
-    source: 2,
-    utm_source: "web_cliente",
-    utm_medium: "continents",
     extra: form.consult.value,
-    IDpais: 1,
-    IDform: 447,
+    // telefono: form.phone.value,
+    // tel: form.phone.value,
+    source: 2,
+    utm_source: "web",
+    utm_medium: "bricks",
   });
   event.preventDefault();
   if (!form.checkValidity()) {
