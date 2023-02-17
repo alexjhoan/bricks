@@ -144,7 +144,14 @@ function MarketAnimation(containers) {
     }
   }
 }
-
+/*-------------------------------Market-Swiper section----------------------------------*/
+const marketswiper = new Swiper(".mkSwiper", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 /*-------------------------------sections-by-scroll----------------------------------*/
 
 let containers = {};
@@ -182,7 +189,7 @@ $(window).on("scroll", function () {
   MarketAnimation(containers);
 });
 
-/*-------------------------------Market Grid----------------------------------*/
+/*-------------------------------Marketing Grid----------------------------------*/
 if (screen.width < 992) {
   $(".marketing_grid").addClass("swiper");
   $(".sgrid").addClass("swiper-wrapper");

@@ -35,6 +35,23 @@
       }
     }
   }
+  .imgright {
+    position: absolute;
+    right: -80px;
+    img.pantallab {
+      position: absolute;
+      right: 250px;
+      top: 50px;
+      max-width: 260px;
+      width: 100%;
+    }
+    img.lupab {
+      position: absolute;
+      top: 140px;
+      right: 80px;
+      max-width: 300px;
+    }
+  }
   .lupa-b {
     position: absolute;
     right: -30px;
@@ -45,8 +62,6 @@
 }
 /*---------------------------Market-------------------------------*/
 .market{
-  padding: 100px 0;
-  min-height: 1272px;
   .h1{
     line-height: 1.8;
     margin-bottom: 21px;
@@ -61,13 +76,27 @@
     max-width: 356px;
     width: 100%;
   }
-  &_col{
-    position: relative;
-    .icon{
-      position: absolute;
-      top: 30px;
+  .mkSwiper{
+    .swiper-wrapper{
+      .swiper-slide{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 80px;
+        .mkleft{
+          position: relative;
+          text-align: center;
+          .icon{
+            position: absolute;
+            top: 30px;
+          }
+        }
+      }
+    }
+    .swiper-pagination-bullets.swiper-pagination-horizontal{
+      bottom: -5px;
     }
   }
+
   &_center{
     display: flex;
     flex-direction: column;
