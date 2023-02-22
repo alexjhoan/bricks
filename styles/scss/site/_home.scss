@@ -316,11 +316,9 @@
           margin: auto;
           max-height: 65px;
         }
-        .img-zetta {
-          max-height: 95px !important;
-        }
-        .img-oga {
-          max-height: 75px !important;
+        img.card-img-top.grupoa.zetavillage {
+          max-height: none;
+          width: 38%;
         }
       }
       .card-b{
