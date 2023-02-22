@@ -10,3 +10,6 @@ git remote add origin https://github.com/
 git add .
 git commit -m "firts commit"
 git push origin master
+
+to deploy
+https://api.render.com/deploy/srv-cfj9gjhmbjsn9ef1qrng?key=M8M8ee2b2LI
