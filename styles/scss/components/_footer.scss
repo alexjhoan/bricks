@@ -41,6 +41,9 @@
       align-items: center;
       justify-content: flex-end;
       column-gap: 16px;
+      img{
+        width: 100%;
+      }
     }
   }
   &_text{

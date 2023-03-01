@@ -4,7 +4,7 @@
   padding: 300px 0 200px;
   overflow-x: hidden;
   margin-top: -90px ;
-  h1{
+  h1, .h1{
     font-size: 54px;
     line-height: 65px;
     color: $primary;
@@ -83,12 +83,7 @@
         grid-template-columns: 1fr 1fr;
         padding-bottom: 80px;
         .mkleft{
-          position: relative;
           text-align: center;
-          .icon{
-            position: absolute;
-            top: 30px;
-          }
         }
       }
     }
